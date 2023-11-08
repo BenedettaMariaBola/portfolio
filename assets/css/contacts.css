@@ -81,3 +81,16 @@ header {
 .contacts:hover {
     color: #d699ac;
 }
+
+/* tablet layout */
+@media only screen and (min-width: 768px) {
+
+    .header-list {
+        flex-wrap: nowrap;
+    }
+
+    .header-list-item {
+        font-size: 18px;
+    }
+
+}

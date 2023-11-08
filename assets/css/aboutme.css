@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     padding: 0;
@@ -8,7 +7,7 @@
 }
 
 :root {
-    --serif: "Cormorant Garamond", serif;
+    --serif: "Times New Roman", Times, serif;
     --sans-serif: "Montserrat", sans-serif;
 }
 
@@ -20,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 header {
@@ -94,20 +94,46 @@ header {
 /* ciao! */
 .title-one {
     color: #87A878;
-    font-size: 30px;
-    font-style: italic;
+    font-size: 35px;
     text-transform: capitalize;
     font-family: var(--serif);
-    font-weight: bolder;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.presentation-container {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-portfolio {
+    /* background-color: red; */
+    width: 100%;
+    max-width: 250px;
+}
+
+.presentation-paragraph {
+    /* background-color: blueviolet; */
+    display: flex;
+}
+
+.presentation {
+    color: #130303;
+    font-size: 15px;
+    font-family: var(--sans-serif);
+    font-weight: 200;
 }
 
 /* mi chiamo benedetta */
 .title-two {
     color: #87A878;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: var(--sans-serif);
-    font-weight: bold;
+    font-size: 35px;
+    font-family: var(--serif);
+    font-weight: 200;
+    font-style: italic;
 }
 
 .card-container {
@@ -129,7 +155,8 @@ header {
     /* background-color: aliceblue; */
     font-family: var(--serif);
     font-size: 30px;
-    font-weight: bolder;
+    font-weight: 200;
+    font-style: italic;
     text-transform: capitalize;
     color: #87A878;
 }
@@ -145,17 +172,24 @@ header {
 /* tablet layout */
 @media only screen and (min-width: 768px) {
 
+    .header-list {
+        flex-wrap: nowrap;
+    }
+
+    .header-list-item {
+        font-size: 18px;
+    }
+
     .title-one {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .title-two {
-        font-size: 30px;
+        font-size: 50px;
 
     }
 
     .card-container {
-        /* background-color: #87A878; */
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -164,6 +198,17 @@ header {
     .card {
         width: 48%;
     }
+
+    .presentation-container {
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .presentation-paragraph {
+        max-width: 600px;
+    }
+
 }
 
 /* desktop layout */
@@ -174,8 +219,7 @@ header {
     }
 
     .title-two {
-        font-size: 50px;
-
+        font-size: 60px;
     }
 
     .card {
