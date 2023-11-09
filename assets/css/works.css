@@ -6,15 +6,24 @@
     box-sizing: border-box;
 }
 
+:root {
+    --yellow: #f7cb15;
+    --green: #87a878;
+    --pink: #d699ac;
+    --orange: #e06c00;
+    --liquirice: #130303;
+    --white: #fffefb;
+    --serif: "Times New Roman", Times, serif;
+    --sans-serif: "Montserrat", sans-serif;
+}
+
 body {
     background-color: #fffefb;
     padding: 0 20px;
     width: 100dvw;
     height: 100dvh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 header {
@@ -78,6 +87,16 @@ header {
     color: #d699ac;
 }
 
+.works-container {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: absolute;
+}
+
+
+
 /* tablet layout */
 @media only screen and (min-width: 768px) {
 
@@ -88,5 +107,5 @@ header {
     .header-list-item {
         font-size: 18px;
     }
-    
+
 }

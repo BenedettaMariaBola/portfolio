@@ -7,6 +7,12 @@
 }
 
 :root {
+    --yellow: #f7cb15;
+    --green: #87a878;
+    --pink: #d699ac;
+    --orange: #e06c00;
+    --liquirice: #130303;
+    --white: #ffffff;
     --serif: "Times New Roman", Times, serif;
     --sans-serif: "Montserrat", sans-serif;
 }
@@ -26,7 +32,6 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    /* background-color: coral; */
     width: 100%;
     height: 100px;
 }
@@ -85,7 +90,6 @@ header {
 
 /* blocco ciao e benedetta */
 .main-title-green {
-    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
     margin-top: 150px;
@@ -102,7 +106,6 @@ header {
 }
 
 .presentation-container {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,13 +113,11 @@ header {
 }
 
 .foto-portfolio {
-    /* background-color: red; */
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
 }
 
 .presentation-paragraph {
-    /* background-color: blueviolet; */
     display: flex;
 }
 
