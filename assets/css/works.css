@@ -18,12 +18,12 @@
 }
 
 body {
-    background-color: #fffefb;
+    background-color: var(--white);
     padding: 0 20px;
     width: 100dvw;
-    height: 100dvh;
-    display: flex;
-    align-items: center;
+    height: fit-content;
+    min-height: 100dvh;
+    padding-top: 150px;
 }
 
 header {
@@ -88,14 +88,67 @@ header {
 }
 
 .works-container {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
     gap: 50px;
-    position: absolute;
 }
 
+.first-section {
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: column;
+    color: var(--liquirice);
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 35px;
+}
 
+.ecodream-works {
+    max-width: 200px;
+    padding-top: 30px;
+}
+
+.second-section {
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    color: var(--liquirice);
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 35px;
+}
+
+.lmsc-works {
+    max-width: 200px;
+    padding-top: 30px;
+}
+
+.third-section {
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    color: var(--liquirice);
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 35px;
+}
+
+.portfolio-works {
+    max-width: 200px;
+    padding-top: 30px;
+}
+
+.description {
+    padding-top: 50px;
+    color: var(--liquirice);
+    font-family: var(--sans-serif);
+    font-weight: 200;
+    font-size: 15px;
+}
 
 /* tablet layout */
 @media only screen and (min-width: 768px) {
