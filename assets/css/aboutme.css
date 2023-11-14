@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     gap: 30px;
     margin-bottom: 50px;
+    overflow-x: hidden;
 }
 
 header {
@@ -168,6 +169,36 @@ header {
     font-size: 15px;
     font-weight: 200;
     color: #130303;
+}
+
+footer {
+    background-color: var(--white);
+    width: 100dvw;
+    position: relative;
+    left: -20px;
+    height: fit-content;
+    margin-top: 30px;
+    padding: 20px 0;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img-container img {
+    width: 40px;
+}
+
+footer>p {
+    text-align: center;
+    padding-top: 20px;
+    color: var(--liquirice);
+    font-family: var(--serif);
+    font-weight: 200;
+    font-size: 15px;
 }
 
 /* tablet layout */

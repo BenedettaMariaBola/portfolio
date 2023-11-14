@@ -29,6 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 header {
@@ -142,6 +143,35 @@ form>button {
     color: var(--pink);
 }
 
+footer {
+    background-color: var(--white);
+    width: 100%;
+    position: absolute;
+    top: 100dvh;
+    left: 0;
+    height: fit-content;
+    padding: 20px 0;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img-container img {
+    width: 40px;
+}
+
+footer>p {
+    text-align: center;
+    padding-top: 20px;
+    color: var(--liquirice);
+    font-family: var(--serif);
+    font-weight: 200;
+    font-size: 15px;
+}
 
 /* tablet layout */
 @media only screen and (min-width: 768px) {
