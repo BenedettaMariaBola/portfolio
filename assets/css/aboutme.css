@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: #fffefb;
+    background-color: var(--white);
     padding: 0 20px;
     width: 100dvw;
     height: 100dvh;
@@ -55,7 +55,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 16px;
-    color: #130303;
+    color: var(--liquirice);
     transition: all 0.3s ease;
 }
 
@@ -65,7 +65,7 @@ header {
 }
 
 .about-me {
-    color: #87A878;
+    color: var(--green);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -78,15 +78,15 @@ header {
 }
 
 .works:hover {
-    color: #e06c00;
+    color: var(--orange);
 }
 
 .home:hover {
-    color: #f7cb15;
+    color: var(--yellow);
 }
 
 .contacts:hover {
-    color: #d699ac;
+    color: var(--pink);
 }
 
 /* blocco ciao e benedetta */
@@ -98,7 +98,7 @@ header {
 
 /* ciao! */
 .title-one {
-    color: #87A878;
+    color: var(--green);
     font-size: 35px;
     text-transform: capitalize;
     font-family: var(--serif);
@@ -120,10 +120,12 @@ header {
 
 .presentation-paragraph {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .presentation {
-    color: #130303;
+    color: var(--liquirice);
     font-size: 15px;
     font-family: var(--sans-serif);
     font-weight: 200;
@@ -131,7 +133,7 @@ header {
 
 /* mi chiamo benedetta */
 .title-two {
-    color: #87A878;
+    color: var(--green);
     font-size: 35px;
     font-family: var(--serif);
     font-weight: 200;
@@ -139,14 +141,12 @@ header {
 }
 
 .card-container {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .card {
-    /* background-color: #e06c00; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -154,25 +154,27 @@ header {
 }
 
 .card h2 {
-    /* background-color: aliceblue; */
     font-family: var(--serif);
     font-size: 30px;
     font-weight: 200;
     font-style: italic;
     text-transform: capitalize;
-    color: #87A878;
+    color: var(--green);
 }
 
 .card p {
-    /* background-color: #f7cb15; */
     font-family: var(--sans-serif);
     font-size: 15px;
     font-weight: 200;
-    color: #130303;
+    color: var(--liquirice);
+}
+
+strong {
+    color: var(--green);
 }
 
 footer {
-    background-color: var(--white);
+    background-color: var(--green);
     width: 100dvw;
     position: relative;
     left: -20px;
@@ -232,7 +234,6 @@ footer>p {
     }
 
     .presentation-container {
-        /* background-color: aqua; */
         display: flex;
         flex-direction: row;
     }

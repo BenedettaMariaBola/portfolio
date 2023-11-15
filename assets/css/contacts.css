@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: #fffefb;
+    background-color: var(--white);
     background-image: url("./../imgs/patternline.png");
     background-position: center;
     background-size: cover;
@@ -59,7 +59,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 16px;
-    color: #130303;
+    color: var(--liquirice);
     transition: all 0.3s ease;
 }
 
@@ -69,7 +69,7 @@ header {
 }
 
 .contacts {
-    color: #d699ac;
+    color: var(--pink);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -82,19 +82,18 @@ header {
 }
 
 .works:hover {
-    color: #e06c00;
+    color: var(--orange);
 }
 
 .home:hover {
-    color: #f7cb15;
+    color: var(--yellow);
 }
 
-.contacts:hover {
-    color: #d699ac;
+.about-me:hover {
+    color: var(--green);
 }
 
 .contacts-container {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +143,7 @@ form>button {
 }
 
 footer {
-    background-color: var(--white);
+    background-color: var(--pink);
     width: 100%;
     position: absolute;
     top: 100dvh;

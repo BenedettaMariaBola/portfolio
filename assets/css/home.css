@@ -30,7 +30,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     overflow-x: hidden;
 }
 
@@ -61,7 +60,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 16px;
-    color: #130303;
+    color: var(--liquirice);
     transition: all 0.3s ease;
 }
 
@@ -71,7 +70,7 @@ header {
 }
 
 .home {
-    color: #f7cb15;
+    color: var(--yellow);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -85,20 +84,20 @@ header {
 
 
 .works:hover {
-    color: #e06c00;
+    color: var(--orange);
 }
 
 .about-me:hover {
-    color: #87a878;
+    color: var(--green);
 }
 
 .contacts:hover {
-    color: #d699ac;
+    color: var(--pink);
 }
 
 
 .main-title {
-    /* background-color: aqua; */
+ 
     width: 100%;
     height: fit-content;
     display: flex;
@@ -107,7 +106,6 @@ header {
 }
 
 .main-title-yellow {
-    /* background-color: #f7cb15; */
     position: relative;
     font-size: 45px;
     left: -50px;
@@ -115,22 +113,20 @@ header {
     font-family: var(--serif);
     font-weight: 200;
     font-style: italic;
-    color: #f7cb15;
+    color: var(--yellow);
 }
 
 .main-title-orange {
-    /* background-color: orange; */
     position: relative;
     font-size: 35px;
     left: 25px;
     top: -5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    color: #e06c00;
+    color: var(--orange);
 }
 
 .second-title {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,7 +138,7 @@ header {
     font-size: 15px;
     font-weight: 300;
     text-align: center;
-    color: #d699ac;
+    color: var(--pink)
 }
 
 .description {
@@ -150,11 +146,11 @@ header {
     font-size: 15px;
     font-weight: 300;
     text-align: center;
-    color: #87a878;
+    color: var(--green)
 }
 
 footer {
-    background-color: var(--white);
+    background-color: var(--yellow);
     width: 100%;
     position: absolute;
     top: 100dvh;
