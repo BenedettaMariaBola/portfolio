@@ -119,6 +119,10 @@ header {
     font-size: 35px;
 }
 
+.lmsc-title {
+    line-height: 30px;
+}
+
 .lmsc-works {
     max-width: 250px;
     padding-top: 30px;
